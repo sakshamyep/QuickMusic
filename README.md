@@ -1,7 +1,9 @@
 # QuickMusic
+
 A high quality stable discord music bot based on Kazagumo.
 
 # Features
+
 ✅ All in one command /play.
 
 ✅ Lavalink support.
@@ -15,6 +17,10 @@ A high quality stable discord music bot based on Kazagumo.
 ✅ Buttons.
 
 ✅ Spotify/Youtube support.
+
+✅ Playlists support.
+
+✅ Best bot for personal use.
 
 # Requirements
 
