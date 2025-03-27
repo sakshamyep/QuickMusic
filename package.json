@@ -1,5 +1,5 @@
 {
-  "name": "Quick Music",
+  "name": "QuickMusic",
   "author": "@sakshamyep",
   "version": "1.0",
   "type": "module",
@@ -13,5 +13,6 @@
     "kazagumo": "^3.2.2",
     "kazagumo-spotify": "^2.1.1",
     "shoukaku": "^4.1.1"
-  }
+  },
+  "license": "MIT"
 }
