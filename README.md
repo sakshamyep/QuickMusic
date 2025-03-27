@@ -8,7 +8,7 @@ A high quality stable discord music bot based on Kazagumo.
 
 ✅ Cache based.
 
-✅ High quality.
+✅ High quality and lag free.
 
 ✅ Simple and easy to use.
 
@@ -22,7 +22,7 @@ Node.js v20 or higher
 
 discord.js v14
 
-# Installation & Setup
+# Setup
 
 • npm install
 
