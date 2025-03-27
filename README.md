@@ -3,48 +3,40 @@ A high quality stable discord music bot based on Kazagumo.
 
 # Features
 ✅ All in one command /play.
+
 ✅ Lavalink support.
+
 ✅ Cache based.
+
 ✅ High quality.
+
 ✅ Simple and easy to use.
+
 ✅ Buttons.
+
 ✅ Spotify/Youtube support.
 
 # Requirements
 
 Node.js v20 or higher
 
-npm (Node Package Manager)
+discord.js v14
 
 # Installation & Setup
 
-1. Clone the Repository
+• npm install
 
-git clone https://github.com/sakshamyep/QuickMusic/
-cd your-repo
+• change example.env to .env
 
-2. Install Dependencies
+• add bot token, nodes in .env
 
-npm install
+• run the bot:
 
-3. Configure the Bot
-
-1. Rename .env.example to .env
-
-
-2. Add your Discord Bot Token and other necessary credentials
-
-
-
-4. Run the Bot
-
-node index.js
+• node index.js
 
 # Usage
 
-Use /play to see other commands through buttons
-
-Customize the bot in the .env file
+Use /play to see other commands through buttons.
 
 
 # Contributing
