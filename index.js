@@ -1,3 +1,7 @@
+/**
+ * QuickMusic
+ * Copyright (c) 2025 Saksham Pandey
+ **/
 import "dotenv/config";
 import {
   Client,
@@ -417,3 +421,7 @@ process.on("unhandledRejection", console.error);
 process.on("uncaughtException", console.error);
 
 client.login(config.token).catch(console.error);
+/**
+ * QuickMusic
+ * Copyright (c) 2025 Saksham Pandey
+ **/
