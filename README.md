@@ -8,8 +8,6 @@ A high quality stable discord music bot based on Kazagumo.
 
 ✅ Lavalink support.
 
-✅ Cache based.
-
 ✅ High quality and lag free.
 
 ✅ Simple and easy to use.
@@ -27,6 +25,8 @@ A high quality stable discord music bot based on Kazagumo.
 Node.js v20 or higher
 
 discord.js v14
+
+At least 500mb+ ram for both lavalink and bot. Consider 1.5GB ram for lag-free experience.
 
 # Setup
 
