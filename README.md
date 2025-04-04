@@ -1,6 +1,6 @@
 # QuickMusic
 
-A simple high quality stable discord music bot.
+A simple and high quality discord music bot.
 
 # Features
 
