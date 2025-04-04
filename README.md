@@ -1,6 +1,6 @@
 # QuickMusic
 
-A high quality stable discord music bot based on Kazagumo.
+A simple high quality stable discord music bot.
 
 # Features
 
@@ -12,19 +12,15 @@ A high quality stable discord music bot based on Kazagumo.
 
 ✅ Simple and easy to use.
 
-✅ Buttons.
-
 ✅ Spotify/Youtube support.
 
 ✅ Playlists support.
 
-✅ Best bot for personal use.
-
 # Requirements
 
-Node.js v20 or higher
+Node.js v22 or higher
 
-discord.js v14
+discord.js v14.18.0
 
 At least 500mb+ ram for both lavalink and bot. Consider 1.5GB ram for lag-free experience.
 
@@ -42,7 +38,7 @@ At least 500mb+ ram for both lavalink and bot. Consider 1.5GB ram for lag-free e
 
 # Usage
 
-Use /play to see other commands through buttons.
+Use /play to see other commands through buttons. Currently only few buttons are there - Pause, Resume, Skip, Stop, Loop, Vol +, Vol -
 
 
 # Contributing
