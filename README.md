@@ -14,7 +14,7 @@ A simple and high quality discord music bot.
 
 ✅ Spotify/Youtube support.
 
-✅ Playlists support.
+✅ Autoplay, Lyrics, Playlists support.
 
 # Requirements
 
@@ -38,8 +38,7 @@ At least 500mb+ ram for both lavalink and bot. Consider 1.5GB ram for lag-free e
 
 # Usage
 
-Use /play to see other commands through buttons. Currently only few buttons are there - Pause, Resume, Skip, Stop, Loop, Vol +, Vol -
-
+Use /play to see other commands through buttons.
 
 # Contributing
 
