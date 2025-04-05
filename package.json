@@ -1,17 +1,17 @@
 {
   "name": "QuickMusic",
   "author": "@sakshamyep",
-  "version": "1.0",
+  "version": "1.1",
   "type": "module",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
     "@discordjs/voice": "^0.18.0",
+    "axios": "^1.8.4",
     "discord.js": "^14.18.0",
     "dotenv": "^16.4.7",
     "kazagumo": "^3.2.2",
-    "kazagumo-spotify": "^2.1.1",
     "shoukaku": "^4.1.1"
   },
   "license": "MIT"
