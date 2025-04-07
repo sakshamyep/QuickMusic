@@ -4,9 +4,11 @@ A simple and high quality discord music bot.
 
 # Features
 
-✅ All in one command /play.
+✅ All in one command !play.
 
 ✅ Lavalink support.
+
+✅ Customisable prefix, status.
 
 ✅ High quality and lag free.
 
@@ -38,7 +40,9 @@ At least 500mb+ ram for both lavalink and bot. Consider 1.5GB ram for lag-free e
 
 # Usage
 
-Use /play to see other commands through buttons.
+Use !play to see other commands through buttons.
+
+You can change the prefix from .env file check for BOT_PREFIX= and set your own prefix.
 
 # Contributing
 
