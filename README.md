@@ -42,7 +42,7 @@ Must enable message-content-intent from discord developers portal.
 
 # Usage
 
-Use !play to see other commands through buttons.
+Use !play <song name or URL> to see other commands through buttons.
 
 You can change the prefix from .env file check for BOT_PREFIX= and set your own prefix.
 
