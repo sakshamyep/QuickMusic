@@ -26,6 +26,8 @@ discord.js v14.18.0
 
 At least 500mb+ ram for both lavalink and bot. Consider 1.5GB ram for lag-free experience.
 
+Must enable message-content-intent from discord developers portal.
+
 # Setup
 
 • npm install
