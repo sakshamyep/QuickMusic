@@ -1,6 +1,6 @@
 # QuickMusic
 
-A simple, high quality and stable discord music bot based on DiscordJS V14 and Kazagumo.
+A simple, high quality and stable discord music bot based on Discord.js V14 and Kazagumo.
 
 # Features
 
@@ -14,7 +14,7 @@ A simple, high quality and stable discord music bot based on DiscordJS V14 and K
 
 ✅ Simple and easy to use.
 
-✅ Spotify/Youtube support.
+✅ Youtube/Spotify/Soundcloud support.
 
 ✅ Autoplay, Lyrics, Playlists support.
 
