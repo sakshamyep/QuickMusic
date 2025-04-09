@@ -478,13 +478,13 @@ class InteractionHandler {
           voiceId: message.member.voice.channel.id,
           volume: 100,
           quality: "very_high",
-          bitrate: "320000",
+          bitrate: "384000",
           sampleRate: "48000",
           crossfade: 10,
           leaveOnEnd: false,
           leaveOnStop: true,
           leaveOnEmpty: 300000,
-          bufferSize: 50000,
+          bufferSize: 15000,
           repositionTracks: true,
           autoPlay: true
         });
@@ -705,34 +705,7 @@ async function handlePauseButton(player, interaction) {
   client.on("interactionCreate", (interaction) => {
     if (interaction.isButton()) interactionHandler.handleButton(interaction);
   });
-  
-  client.on("ready", () => {
-    kazagumo.shoukaku.on("nodeConnect", (node) => {
-      console.log(`Node ${node.name} connected, checking load...`);
-      const nodes = kazagumo.shoukaku.nodes;
-      if (nodes.length > 1) {
-        const currentNode = nodes.find(n => n.connected && n.name === node.name);
-        if (currentNode) {
-          const load = currentNode.stats.cpu ? currentNode.stats.cpu.systemLoad / currentNode.stats.cpu.cores : 0;
-          if (load > 0.8) {
-            const leastLoadedNode = nodes
-              .filter(n => n.connected && n.name !== node.name)
-              .reduce((prev, curr) => 
-                (prev.stats.cpu.systemLoad / prev.stats.cpu.cores || 0) < 
-                (curr.stats.cpu.systemLoad / curr.stats.cpu.cores || 0) ? prev : curr, node);
-            if (leastLoadedNode && leastLoadedNode !== currentNode) {
-              kazagumo.players.forEach(player => {
-                if (player.node.name === currentNode.name && !player.paused) {
-                  player.move(leastLoadedNode);
-                }
-              });
-            }
-          }
-        }
-      }
-    });
-  });
-  
+   
   process.on("unhandledRejection", (error) => console.error("Unhandled Rejection:", error));
   process.on("uncaughtException", (error) => console.error("Uncaught Exception:", error));
   
