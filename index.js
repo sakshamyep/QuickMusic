@@ -8,15 +8,8 @@ import { Kazagumo } from "kazagumo";
 import { Connectors } from "shoukaku";
 import axios from "axios";
 
-class Music {
+class QuickMusic {
   constructor() {
-    this.config = {};
-  };
-};
-
-class QuickMusic extends Music {
-  constructor() {
-    super();
     this.config = {
       token: process.env.TOKEN,
       prefix: process.env.BOT_PREFIX,
