@@ -8,9 +8,9 @@ A simple, high quality and stable discord music bot based on Discord.js V14 and 
 
 ✅ Lavalink support.
 
-✅ Customisable prefix, status.
+✅ Customisable prefix.
 
-✅ High quality and lag free.
+✅ High quality and smooth playback.
 
 ✅ Simple and easy to use.
 
@@ -18,7 +18,6 @@ A simple, high quality and stable discord music bot based on Discord.js V14 and 
 
 ✅ Autoplay, Lyrics, Playlists support.
 
-✅ Latest Discord.js V14, ES6+ Javascript Syntax.
 # Requirements
 
 Nodejs v22 or higher. 
