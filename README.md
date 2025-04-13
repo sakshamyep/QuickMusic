@@ -20,7 +20,7 @@ A simple, high quality and stable discord music bot based on Discord.js V14 and 
 
 # Requirements
 
-Nodejs v22 or higher. 
+Nodejs v20 or higher. 
 
 discord.js v14.18.0
 
