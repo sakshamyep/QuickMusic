@@ -14,7 +14,7 @@ A simple, high quality and stable discord music bot based on Discord.js V14 and 
 
 ✅ Simple and easy to use.
 
-✅ Youtube/Spotify/Soundcloud support.
+✅ Youtube, Spotify, AppleMusic, Soundcloud support.
 
 ✅ Autoplay, Lyrics, Playlists support.
 
@@ -22,13 +22,13 @@ A simple, high quality and stable discord music bot based on Discord.js V14 and 
 
 Nodejs v22 or higher. 
 
-Nodejs v23 recommended.
-
 discord.js v14.18.0
 
 At least 500mb+ ram for both lavalink and bot.
 
 Must enable message-content-intent from discord developers portal.
+
+In order to use Spotify or Applemusic playlists, tracks via URL make sure your lavalink has required setup/plugins else only Youtube and Soundcloud will work by default.
 
 # Setup
 
