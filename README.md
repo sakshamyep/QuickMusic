@@ -34,8 +34,6 @@ In order to use Spotify or Applemusic playlists, tracks via URL make sure your l
 
 • npm install
 
-• change example.env to .env
-
 • add bot token, nodes in .env
 
 • run the bot:
