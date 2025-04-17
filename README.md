@@ -6,7 +6,7 @@ A simple, high quality and stable discord music bot based on Discord.js V14 and 
 
 ✅ All in one command !play.
 
-✅ Lavalink support.
+✅ Spotify direct playback.
 
 ✅ Customisable prefix.
 
@@ -35,6 +35,8 @@ In order to use Spotify or Applemusic playlists, tracks via URL make sure your l
 • npm install
 
 • add bot token, nodes in .env
+
+• add spotify credentials in .env
 
 • run the bot:
 
