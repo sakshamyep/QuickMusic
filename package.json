@@ -1,0 +1,20 @@
+{
+  "name": "QuickMusic",
+  "author": "@sakshamyep",
+  "version": "1.5",
+  "type": "module",
+  "scripts": {
+    "start": "node QuickMusic.js"
+  },
+  "dependencies": {
+    "axios": "^1.8.4",
+    "discord.js": "^14.18.0",
+    "dotenv": "^16.4.7",
+    "kazagumo": "^3.2.2",
+    "shoukaku": "^4.1.1"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
