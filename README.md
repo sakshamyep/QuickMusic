@@ -40,7 +40,7 @@ In order to use Spotify or Applemusic playlists, tracks via URL make sure your l
 
 • run the bot:
 
-• node index.js
+• node QuickMusic.js
 
 # Usage
 
