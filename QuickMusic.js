@@ -163,7 +163,7 @@ class QuickMusic {
       await oldMsg.delete();
     } catch (error) {
       if (error.code !== 10008) {
-        console.error(`Failed to delete old now playing message for guild ${guildId}:`, error);
+        return null;
       }
     } finally {
       this.nowPlayingMessages.delete(guildId);
@@ -177,7 +177,7 @@ class QuickMusic {
         await oldMsg.delete();
       } catch (error) {
         if (error.code !== 10008) {
-          console.error(`Failed to delete old queue message for guild ${guildId}:`, error);
+          return null;
         }
       }
       this.queueMessages.delete(guildId);
@@ -208,7 +208,7 @@ class QuickMusic {
         });
         this.nowPlayingMessages.set(player.guildId, msg);
       } catch (error) {
-        console.error(`Failed to send now playing embed for guild ${player.guildId}:`, error);
+        return null;
       } finally {
         this.isProcessingTrack = false;
       }
@@ -332,13 +332,11 @@ class QuickMusic {
         .filter((track) => !!track?.uri);
 
       if (!allTracks.length && retryCount < maxRetries) {
-        console.log(`Retrying addRelatedTrack for guild ${guildId}, attempt ${retryCount + 1}`);
         return this.addRelatedTrack(player, retryCount + 1, maxRetries);
       }
     } catch (error) {
-      console.error(`Failed to search related tracks for guild ${guildId}:`, error);
+      return null;
       if (retryCount < maxRetries) {
-        console.log(`Retrying addRelatedTrack for guild ${guildId}, attempt ${retryCount + 1}`);
         return this.addRelatedTrack(player, retryCount + 1, maxRetries);
       }
       return false;
@@ -355,10 +353,8 @@ class QuickMusic {
 
     if (!eligibleTracks.length) {
       if (retryCount < maxRetries) {
-        console.log(`Retrying addRelatedTrack for guild ${guildId}, attempt ${retryCount + 1}`);
         return this.addRelatedTrack(player, retryCount + 1, maxRetries);
       }
-      console.warn(`No eligible related tracks found for guild ${guildId} after ${maxRetries} retries`);
       return false;
     }
 
@@ -563,7 +559,7 @@ class InteractionHandler {
     if (!player) {
       return interaction.reply({
         embeds: [this.quickMusic.createEmbed('Error', 'No active player.')],
-        ephemeral: true,
+        flags: 64,
       });
     }
     if (
@@ -574,7 +570,7 @@ class InteractionHandler {
         embeds: [
           this.quickMusic.createEmbed('Error', 'You must be in the same voice channel.'),
         ],
-        ephemeral: true,
+        flags: 64,
       });
     }
 
@@ -620,7 +616,7 @@ class InteractionHandler {
         const msg = await interaction.reply({
           embeds: [embed],
           components,
-          ephemeral: true,
+          flags: 64,
         });
         this.quickMusic.queueMessages.set(interaction.guild.id, msg);
         return;
@@ -1097,7 +1093,7 @@ class InteractionHandler {
     if (this.quickMusic.isSkipping) {
       await interaction.reply({
         embeds: [this.quickMusic.createEmbed('Skip In Progress', 'Already skipping a track.')],
-        ephemeral: true,
+        flags: 64,
       });
       return;
     }
@@ -1107,7 +1103,7 @@ class InteractionHandler {
     const guildId = interaction.guild.id;
     const isAutoplayEnabled = this.quickMusic.autoplayStates.get(guildId) ?? false;
 
-    await interaction.deferReply({ ephemeral: true });
+    await interaction.deferReply({ flags: 64 });
 
     let embedTitle = 'Skipped';
     let embedDesc = 'Skipped the track.';
@@ -1120,7 +1116,6 @@ class InteractionHandler {
         if (player.queue.length === 0 && isAutoplayEnabled) {
           const added = await this.quickMusic.addRelatedTrack(player);
           if (!added) {
-            console.warn(`Failed to add related track after skip for guild ${guildId} after retries`);
             embedTitle = 'No Tracks Available';
             embedDesc = 'No related tracks found to play. Please add a track manually.';
           }
@@ -1133,7 +1128,6 @@ class InteractionHandler {
 
         await this.quickMusic.deleteOldQueueMessage(guildId);
       } catch (error) {
-        console.error(`Error in handleSkipButton for guild ${guildId}:`, error);
         embedTitle = 'Error';
         embedDesc = 'An error occurred while skipping the track.';
       } finally {
