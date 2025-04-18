@@ -14,21 +14,25 @@ A simple, high quality and stable discord music bot based on Discord.js V14 and 
 
 ✅ Simple and easy to use.
 
-✅ Youtube, Spotify, AppleMusic, Soundcloud support.
+✅ Spotify, YouTube, AppleMusic, Soundcloud support.
 
-✅ Autoplay, Lyrics, Playlists support.
+✅ Autoplay and Lyrics feature.
+
+✅ Albums, Artists, Playlists support.
 
 # Requirements
 
-Nodejs v20 or higher. 
+1. Nodejs v20 or higher. 
 
-discord.js v14.18.0
+2. discord.js v14.18.0
 
-At least 500mb+ ram for both lavalink and bot.
+5. At least 500mb+ ram for both lavalink and bot.
 
-Must enable message-content-intent from discord developers portal.
+6. Must enable message-content-intent from discord developers portal.
 
-In order to use Spotify or Applemusic playlists, tracks via URL make sure your lavalink has required setup/plugins else only Youtube and Soundcloud will work by default.
+7. Must set Spotify credentials in .env
+
+8. In order to use Spotify, AppleMusic through URL for playlists, albums make sure your lavalink has required plugins, if not then only YouTube and Soundcloud will work by default. The current lavalink given in .env supports these sources, it's recommended that you should not change it unless you have a working lavalink.
 
 # Setup
 
@@ -44,24 +48,19 @@ In order to use Spotify or Applemusic playlists, tracks via URL make sure your l
 
 # Usage
 
-Use !play <song name> to see other commands through buttons.
+Use !play <song name or url> to see other commands through buttons.
 
 You can change the prefix from .env file check for BOT_PREFIX= and set your own prefix.
 
 Do not change search engine from Spotify to any other source as it will break autoplay feature since it is optimised for Spotify.
 
-# Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request.
-
 # License
 
 This project is licensed under the MIT License. Attribution is required—please provide credit in your project’s README or bot description.
 
-# Known Bugs
+# Changelog v1.6
 
-1. Old now playing message not deleting on trackEnd when queue is empty and autoplay is off.
-
-2. Autoplay not working well, due to triggering issues in playerEnd and handleSkipButton.
-
-- These bugs will be fixed in v1.6
+1. Fixed autoplay not working.
+2. Fixed autoplay relevancy.
+3. Fixed distortion in playback.
+4. Optimised handlers.
