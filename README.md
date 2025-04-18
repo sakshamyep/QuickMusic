@@ -48,6 +48,8 @@ Use !play <song name> to see other commands through buttons.
 
 You can change the prefix from .env file check for BOT_PREFIX= and set your own prefix.
 
+Do not change search engine from Spotify to any other source as it will break autoplay feature since it is optimised for Spotify.
+
 # Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request.
