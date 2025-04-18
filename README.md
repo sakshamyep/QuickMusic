@@ -57,3 +57,11 @@ Contributions are welcome! Please open an issue or submit a pull request.
 # License
 
 This project is licensed under the MIT License. Attribution is required—please provide credit in your project’s README or bot description.
+
+# Known Bugs
+
+1. Old now playing message not deleting on trackEnd when queue is empty and autoplay is off.
+
+2. Autoplay not working well, due to triggering issues in playerEnd and handleSkipButton.
+
+- These bugs will be fixed in v1.6
