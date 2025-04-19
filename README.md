@@ -58,9 +58,9 @@ Do not change search engine from Spotify to any other source as it will break au
 
 This project is licensed under the MIT License. Attribution is required—please provide credit in your project’s README or bot description.
 
-# Changelog v1.6
+# Changelog v1.6 | 16-04-2025
 
 1. Fixed autoplay not working.
 2. Fixed autoplay relevancy.
 3. Fixed distortion in playback.
-4. Optimised handlers.
+4. Fixed deprecated warnings.
