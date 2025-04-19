@@ -36,7 +36,7 @@ A simple, high quality and stable discord music bot based on Discord.js V14 and 
 
 # Setup
 
-• npm install
+$ npm install
 
 • add bot token, nodes in .env
 
@@ -44,7 +44,7 @@ A simple, high quality and stable discord music bot based on Discord.js V14 and 
 
 • run the bot:
 
-• node QuickMusic.js
+$ node QuickMusic.js
 
 # Usage
 
@@ -58,7 +58,7 @@ Do not change search engine from Spotify to any other source as it will break au
 
 This project is licensed under the MIT License. Attribution is required—please provide credit in your project’s README or bot description.
 
-# Changelog v1.6 (stable)
+# Changelog v1.6
 
 1. Fixed autoplay not working.
 2. Fixed autoplay relevancy.
