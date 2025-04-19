@@ -58,17 +58,13 @@ Do not change search engine from Spotify to any other source as it will break au
 
 This project is licensed under the MIT License. Attribution is required—please provide credit in your project’s README or bot description.
 
-# Changelog v1.6
+# Changelog v1.7
 
-1. Fixed autoplay not working.
-2. Fixed autoplay relevancy.
-3. Fixed distortion in playback.
-4. Fixed deprecated warnings.
-
-# Upcoming v1.7
-
-1. Seek feature via buttons.
-2. Shuffle feature via button.
-3. Grab song feature via button.
-4. Improved now playing embed.
-5. Mention regex support.
+1. Added shuffle feature.
+2. Added grab song feature.
+3. Added clearqueue feature.
+4. Added button restrictions.
+5. Added stats button in help cmd.
+6. Improved now playing embed.
+7. Mention regex support.
+8. Removed undefined player calls.
