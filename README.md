@@ -36,7 +36,7 @@ A simple, high quality and stable discord music bot based on Discord.js V14 and 
 
 # Setup
 
-$ npm install
+• npm install
 
 • add bot token, nodes in .env
 
@@ -44,7 +44,7 @@ $ npm install
 
 • run the bot:
 
-$ node QuickMusic.js
+• node QuickMusic.js
 
 # Usage
 
@@ -64,3 +64,10 @@ This project is licensed under the MIT License. Attribution is required—please
 2. Fixed autoplay relevancy.
 3. Fixed distortion in playback.
 4. Fixed deprecated warnings.
+
+# Upcoming v1.7
+
+1. Seek feature via buttons.
+2. Shuffle feature via button.
+3. Grab song feature via button.
+4. Improved now playing embed.
