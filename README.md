@@ -71,3 +71,4 @@ This project is licensed under the MIT License. Attribution is required—please
 2. Shuffle feature via button.
 3. Grab song feature via button.
 4. Improved now playing embed.
+5. Mention regex support.
