@@ -1,7 +1,7 @@
 {
   "name": "QuickMusic",
   "author": "@sakshamyep",
-  "version": "1.6",
+  "version": "1.7",
   "type": "module",
   "scripts": {
     "start": "node QuickMusic.js"
